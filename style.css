@@ -1,0 +1,97 @@
+
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #cccccc; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-bottom: 30px;
+  background-color: aliceblue;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
+  .header__title {
+    text-align: left;
+    width: 90%; }
+
+.main {
+  padding: 50px 3%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 630px;
+  background-color: aliceblue; }
+  .main__interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .main__tools, .main__color-panel {
+    min-height: 200px;
+    padding: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .main__tools p, .main__color-panel p {
+      text-align: center; }
+  .main__tool-button {
+    outline: none;
+    border: 0;
+    width: 170px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around; }
+    .main__tool-button img {
+      padding: 0 10px; }
+    .main__tool-button span {
+      width: 130px; }
+  .main__color-item {
+    display: flex;
+    flex-wrap: wrap; }
+  .main__input-color {
+    width: 170px;
+    height: 40px; }
+  .main__color-block {
+    width: 15px;
+    height: 15px;
+    margin: 0px 10px;
+    border-radius: 8px; }
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .right-block__canvas {
+    border: 1px solid #cccccc;
+    image-rendering: pixelated;
+    width: 512px;
+    height: 512px; }
+  .right-block__top-row, .right-block__buttom-buttons {
+    display: flex;
+    justify-content: space-between; }
+  .right-block__button {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none; }
+
+#source {
+  display: none; }
+
+.lightening {
+  background-color: cadetblue; }
+
+.green-color {
+  background-color: green; }
+
+.grey-color {
+  background-color: grey; }
+
+.red-color {
+  background-color: red; }
+
+.blue-color {
+  background-color: blue; }
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="codejam-image-canvas" />
+    <meta name="author" lang="en" content="Nasta Vlasovec" />
+    <title>codejam-image-api</title>
+    <link rel="stylesheet" href="style.css" />
+<link href="style.css" rel="stylesheet"></head>
+<body>
+    <header class="header">
+            <img src="images/bfb46f6dfba4ef56a0be9ea48329805f.png" alt="hamburger-menu">
+            <h1 class="header__title">CodeJam Image-api</h1>
+            <img src="images/d2bf2ba7e0f9d2a793cee8d19aa9e563.png" alt="extra-tools">
+    </header>
+    <main class="main">
+            <div class="main__interface">
+                <div class="main__tools" id="tools">
+                    <button class="main__tool-button" id="fill-bucket-tool" >
+                        <img src="images/50cd213613679c2acaf783d2325ba8c5.png" alt="Fill-bucket-tool">
+                        <span>Fill bucket</span>
+                    </button> 
+                    <button class="main__tool-button" id="color-picker-tool">
+                        <img src="images/88f600616ad5728c27c6a9f04a6ff3bb.png" alt="color-picker-tool">
+                        <span>Choose color</span>
+                    </button>
+                    <button class="main__tool-button" id="pensil-tool">
+                        <img src="images/9a61872cf8448a82c1dd4fbb82c46491.png" alt="pensil-tool">
+                        <span>Pensil</span> 
+                    </button>
+                </div>
+                <div class="main__color-panel" id="palette">
+                    <div>
+                        <input type="color" class="main__input-color" id="chosen-color">
+                        <p>Current-color</p>
+                    </div> 
+                    <div class="main__color-item">
+                        <div class="main__color-block grey-color" id="previous-color"></div>
+                        <span>Prev color</span>
+                    </div>
+                    <div class="main__color-item">
+                        <div class="main__color-block red-color"></div>
+                        <span>red</span>
+                    </div>
+                    <div class="main__color-item">
+                        <div class="main__color-block blue-color"></div>
+                        <span>blue</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="right-block__top-row">
+                    <form class="searchForm">
+                        <button id='button'>search</button>
+                        <input type="text" class="search" id="request" placeholder="write a city">
+                    </form>
+                    <button class="right-block__button" id="black-white" >
+                        <span>B&W</span>
+                    </button> 
+                </div>
+                <canvas class="right-block__canvas" width="512" height="512" id="canvas"></canvas>
+                <div class="right-block__buttom-buttons">
+                    <button class="right-block__button" id="size32">
+                        <span>32</span>
+                    </button>
+                    <button class="right-block__button" id="size64">
+                        <span>64</span>
+                    </button>
+                    <button class="right-block__button" id="size128">
+                        <span>128</span>
+                    </button>
+                    <button class="right-block__button" id="size256">
+                        <span>256</span>
+                    </button> 
+                    <button class="right-block__button" id="size512">
+                        <span>512</span>
+                    </button>  
+                </div>
+            </div>
+            <img id="source" src="images/490dc920713788f61d047d7a26f2de48.jpg" width="300" height="227">
+    </main>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
